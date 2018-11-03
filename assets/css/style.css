@@ -23,7 +23,7 @@ p {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: rgba(0, 255, 255);
 }
   .parallax-container .section {
     width: 100%;
@@ -54,6 +54,7 @@ p {
 
 footer.page-footer {
   margin: 0;
+  background-color: #009999;
 }
 
 .brand-logo{
@@ -61,7 +62,7 @@ footer.page-footer {
 }
 
 .dropdown-content {
-  background-color: #FFFFFF;
+  color: #444;
   margin: 0;
   display: none;
   min-width: 300px; /* Changed this to accomodate content width */

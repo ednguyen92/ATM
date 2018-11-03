@@ -13,93 +13,56 @@
 </head>
 
 <body>
-    <!-- <nav class="white nav-extended">
-                <div class="nav-wrapper container">
-                    <a id="logo-container" href="#" class="brand-logo"><img src="assets/images/ATM_Logo.jpg"/></a>
-                  <ul class="right hide-on-med-and-down">
-                    <li><a>A link</a></li>
-                    <li><a>A second link</a></li>
-                    <li><a>A third link</a></li>
-                  </ul>
-                  <ul class="">
-                        <li><a class="dropdown-trigger machining" href="#" data-target="dropdown2" href="#">Machining</a></li>
-                        <li><a href="#">Capabilities</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Company Attributes</a></li>
-                        <li><a href="#">Equipment</a></li>
-                  </ul>
-                </div>
-                <div class="nav-content container">
-                        <ul class="">
-                                <li><a class="dropdown-trigger machining" href="#" data-target="dropdown2" href="#">Machining</a></li>
-                                <li><a href="#">Capabilities</a></li>
-                                <li><a href="#">Products</a></li>
-                                <li><a href="#">Company Attributes</a></li>
-                                <li><a href="#">Equipment</a></li>
-                          </ul>
-                </div>
-              </nav> -->
-    <nav class="white nav-size" role="navigation">
+    <div class="navbar-fixed">
+    <nav class="nav-size white" role="navigation">
         <div class="nav-wrapper container">
             <div class="row">
-                <!-- <a id="logo-container" href="#" class="brand-logo"><img src="assets/images/ATM_Logo.jpg"/></a> -->
                 <div class="col s12">
                     <a id="logo-container" href="#" class="brand-logo">
                         <img src="assets/images/ATM_Logo.jpg" />
                     </a>
                 </div>
             </div>
-            <!-- <ul class="right hide-on-med-and-down">
-                        <li><a class="dropdown-trigger machining" href="#" data-target="dropdown2" href="#">Machining</a></li>
-                        <li><a href="#">Capabilities</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Company Attributes</a></li>
-                        <li><a href="#">Equipment</a></li>
-                  </ul> -->
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#about-section">About Us</a>
+                </li>
+                <li>
+                    <a class="dropdown-trigger machining" data-target="dropdown2">Services and Products</a>
+                </li>
+
+            </ul>
         </div>
 
         <ul id="nav-mobile" class="sidenav">
-            <li>
-                <a class="dropdown-button btn" href="#!" data-activates="dropdown2">Navbar Link</a>
-            </li>
+                <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about-section">About Us</a>
+                    </li>
+                    <li>
+                        <!-- <a class="dropdown-trigger machining" data-target="dropdown2">Services and Products</a> -->
+                    </li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger">
             <i class="material-icons">menu</i>
         </a>
         </div>
     </nav>
-
-    <!-- Dropdown Structure -->
-    <!-- <ul id="dropdown2" class="dropdown-content collection">
-        <li>
-            <p>Machining</p>
-        </li>
-        <li class="collection-item avatar">
-				<span class="title">Name</span>
-				<p>First Line</p>
-				<a href="#!" class="secondary-content"><i class="material-icons">contact_mail</i></a>
-		</li>
-		<li class="collection-item avatar">
-				<span class="title">Name</span>
-				<p>First Line</p>
-				<a href="#!" class="secondary-content"><i class="material-icons">contact_mail</i></a>
-		</li>
-		<li class="collection-item avatar">
-				<span class="title">Name</span>
-				<p>First Line</p>
-				<a href="#!" class="secondary-content"><i class="material-icons">contact_mail</i></a>
-		</li>
-</ul> -->
-
+</div>
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
             <div class="container">
                 <br>
                 <br>
-                <h1 class="header center text-lighten-2">Advanced Tech Machining</h1>
+                <!-- <h1 class="header center text-lighten-2">Advanced Tech Machining</h1>
                 <div class="row center">
                     <h5 class="header col s12 light">Advanced Tech Machining</h5>
-                </div>
+                </div> -->
                 <br>
                 <br>
 
@@ -112,16 +75,25 @@
 
     <ul id="dropdown2" class="dropdown-content">
         <li>
-            <a href="#">Ustawienia</a>
+            <a href="#machining-section">Machining</a>
         </li>
         <li>
-            <a href="#">Panel administratora</a>
+            <a href="#capabilities-section">Capabilities</a>
+        </li>
+        <li>
+            <a href="#product-section">Products</a>
+        </li>
+        <li>
+            <a href="#equipment-section">Equipment</a>
+        </li>
+        <li>
+            <a href="#company-section">Company Attributes</a>
         </li>
     </ul>
 
-
+<div class="section-color">
     <div class="container">
-        <div class="section">
+        <div class="section scrollspy" id="about-section">
 
             <!--   Icon Section   -->
             <div class="row">
@@ -141,7 +113,7 @@
 
         </div>
     </div>
-
+</div>
 
     <div class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
@@ -155,8 +127,9 @@
         </div>
     </div>
 
+    <div class="section-color">
     <div class="container">
-        <div class="section">
+        <div class="section scrollspy" id="machining-section">
 
             <div class="row">
                 <div class="col s12">
@@ -164,26 +137,26 @@
                 </div>
             </div>
             <div class="row">
-                    <div class="col s12 m4">
-                        <p class="center light">S Axis Milling</p>
-                        <p class="center light">Machine Casting</p>
-                        <p class="center light">Shaping</p>
-            </div>
-                    <div class="col s12 m4">
-                        <p class="center light">Deep Hole Drilling</p>
-                        <p class="center light">Milling</p>
-                        <p class="center light">Reaming</p>
-                        <p class="center light">Turning</p>
-            </div>
-                    <div class="col s12 m4">
-                        <p class="center light">Electric Discharge</p>
-                        <p class="center light">Milling & Turning </p>
-                        <p class="center light">Screw/Swiss Machining</p>
-            </div>
+                <div class="col s12 m4">
+                    <p class="center light">S Axis Milling</p>
+                    <p class="center light">Machine Casting</p>
+                    <p class="center light">Shaping</p>
+                </div>
+                <div class="col s12 m4">
+                    <p class="center light">Deep Hole Drilling</p>
+                    <p class="center light">Milling</p>
+                    <p class="center light">Reaming</p>
+                    <p class="center light">Turning</p>
+                </div>
+                <div class="col s12 m4">
+                    <p class="center light">Electric Discharge</p>
+                    <p class="center light">Milling & Turning </p>
+                    <p class="center light">Screw/Swiss Machining</p>
+                </div>
             </div>
         </div>
     </div>
-
+</div>
 
     <div class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
@@ -197,38 +170,40 @@
         </div>
     </div>
 
+    <div class="section-color">
     <div class="container">
-        <div class="section">
+        <div class="section scrollspy" id="capabilities-section">
             <div class="row">
-                    <div class="col s12">
+                <div class="col s12">
                     <h4 class="center">Capabilities</h4>
-                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col s12 m6">
-                  <div class="icon-block">
-                    <h5 class="center">Assembly</h5>
-        
-                    <p class="light">Describe Services</p>
-                  </div>
+                    <div class="icon-block">
+                        <h5 class="center">Assembly</h5>
+
+                        <p class="light">Describe Services</p>
+                    </div>
                 </div>
-        
+
                 <div class="col s12 m6">
-                  <div class="icon-block">
-                    <h5 class="center">Machining</h5>
-        
-                    <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam
-                        pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros
-                        justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget,
-                        bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla
-                        imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam
-                        eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et
-                        ultrices posuere cubilia Curae;</p>
-                  </div>
+                    <div class="icon-block">
+                        <h5 class="center">Machining</h5>
+
+                        <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat.
+                            Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros.
+                            Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere
+                            et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl
+                            maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida
+                            ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis
+                            in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                    </div>
                 </div>
-              </div>
+            </div>
 
         </div>
+    </div>
     </div>
 
     <div class="parallax-container valign-wrapper">
@@ -243,27 +218,29 @@
         </div>
     </div>
 
+    <div class="section-color">
     <div class="container">
-        <div class="section">
+        <div class="section scrollspy" id="product-section">
 
-                <div class="row">
-                        <div class="col s12">
-                            <h4 class="center">Products</h4>
-                        </div>
-                    </div>
-                    <div class="row">
-                            <div class="col s12">
-                                <p class="center light">Lathes</p>
-                                <p class="center light">Conductor Mill Work</p>
-                                <p class="center light">Medical Industry</p>
-                                <p class="center light">Semi-Conducteurs</p>
-                                <p class="center light">Aerospace</p>
-                                <p class="center light">Any other machining work</p>
-                    </div>
-                    </div>
+            <div class="row">
+                <div class="col s12">
+                    <h4 class="center">Products</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <p class="center light">Lathes</p>
+                    <p class="center light">Conductor Mill Work</p>
+                    <p class="center light">Medical Industry</p>
+                    <p class="center light">Semi-Conducteurs</p>
+                    <p class="center light">Aerospace</p>
+                    <p class="center light">Any other machining work</p>
+                </div>
+            </div>
 
         </div>
     </div>
+</div>
 
     <div class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
@@ -276,39 +253,39 @@
             <img src="assets/images/background2.jpg" alt="Unsplashed background img 2">
         </div>
     </div>
-
+    <div class="section-color">
     <div class="container">
-        <div class="section">
+        <div class="section scrollspy" id="equipment-section">
 
-                <div class="row">
-                        <div class="col s12">
-                            <h4 class="center">Equipment</h4>
-                        </div>
-                    </div>
-                    <div class="row">
-                            <div class="col s12 m4">
-                                <p class="center light">AKIRA-SEIKI V6 (TRAVEL 64 X 34 X 32)</p>
-                                <p class="center light">AKIRA-SEIKI V4 (TRAVEL 43 X 23 X 26)</p>
-                                <p class="center light">HAAS VF3 SS WITH 5 AXIS TRUNION (TRAVEL 40 C 20 C 24)</p>
-                                <p class="center light">VF9 50TAPER (32 X 40 X 84)</p>
-                    </div>
-                            <div class="col s12 m4">
-                                <p class="center light">HAAS VF 5 (TRAVEL 60 X 26 X 28)</p>
-                                <p class="center light">HAAS VF3 (TRAVEL 40 X 20 X 24)</p>
-                                <p class="center light">HAAS VF2 WITH 4TH AXIS INDEXER (TRAVEL 32 X 16 X 18)</p>
-                                <p class="center light">HAAS VF2 (TRAVEL 32 X 16 X 18)</p>
-                    </div>
-                            <div class="col s12 m4">
-                                <p class="center light">AKIRA-SEIKI LATHE</p>
-                                <p class="center light">HWACHEON LATHE </p>
-                                <p class="center light">AMG S PLUS 10 (TRAVEL 28 X 20 X 40)</p>
-                                <p class="center light">AMG 50TAPER (32 X 26 X 52)</p>
-                    </div>
-                    </div>
+            <div class="row">
+                <div class="col s12">
+                    <h4 class="center">Equipment</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m4">
+                    <p class="center light">AKIRA-SEIKI V6 (TRAVEL 64 X 34 X 32)</p>
+                    <p class="center light">AKIRA-SEIKI V4 (TRAVEL 43 X 23 X 26)</p>
+                    <p class="center light">HAAS VF3 SS WITH 5 AXIS TRUNION (TRAVEL 40 C 20 C 24)</p>
+                    <p class="center light">VF9 50TAPER (32 X 40 X 84)</p>
+                </div>
+                <div class="col s12 m4">
+                    <p class="center light">HAAS VF 5 (TRAVEL 60 X 26 X 28)</p>
+                    <p class="center light">HAAS VF3 (TRAVEL 40 X 20 X 24)</p>
+                    <p class="center light">HAAS VF2 WITH 4TH AXIS INDEXER (TRAVEL 32 X 16 X 18)</p>
+                    <p class="center light">HAAS VF2 (TRAVEL 32 X 16 X 18)</p>
+                </div>
+                <div class="col s12 m4">
+                    <p class="center light">AKIRA-SEIKI LATHE</p>
+                    <p class="center light">HWACHEON LATHE </p>
+                    <p class="center light">AMG S PLUS 10 (TRAVEL 28 X 20 X 40)</p>
+                    <p class="center light">AMG 50TAPER (32 X 26 X 52)</p>
+                </div>
+            </div>
 
         </div>
     </div>
-
+</div>
     <div class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
             <div class="container">
@@ -321,9 +298,9 @@
         </div>
     </div>
 
-
+    <div class="section-color">
     <div class="container">
-        <div class="section">
+        <div class="section scrollspy" id="company-section">
 
             <div class="row">
                 <div class="col s12 center">
@@ -343,7 +320,46 @@
 
         </div>
     </div>
+</div>
 
+<div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                </div>
+            </div>
+        </div>
+        <div class="parallax">
+            <img src="assets/images/background3.jpg" alt="Unsplashed background img 2">
+        </div>
+    </div>
+
+<footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Advanced Tech Machining</h5>
+              <p class="grey-text text-lighten-4">45979 Warm Springs Blvd, Suite#2</p>
+              <p class="grey-text text-lighten-4">Fremont, CA 94539</p>
+    
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text">Contact Us</h5>
+              <ul>
+                <li><a class="white-text" href="#!">Main 1: (408) 433-9451</a></li>
+                <li><a class="white-text" href="#!">Main 2: (510) 573-2437</a></li>
+                <li><a class="white-text" href="#!">Mobile: (408) 891-1484</a></li>
+                <li><a class="white-text" href="#!">Email: bao.nguyen@atmachining.us</a></li>
+                <li><a class="white-text" href="#!">Web: www.atmachining.us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          </div>
+        </div>
+      </footer>
 
     <!--  Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
