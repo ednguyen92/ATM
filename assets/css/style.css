@@ -1,11 +1,3 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -88,63 +80,6 @@ footer.page-footer {
   margin: 0px;
 }
 
-/* .loader {
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.loader > img {
-  width: 100px;
-}
-
-.loader.hidden {
-  animation: fadeOut 5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeOut {
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-} */
-
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff;
-  /* change if the mask should have another color then white */
-  z-index: 99;
-  /* makes sure it stays on top */
-}
-
-#status {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 50%;
-  /* centers the loading animation horizontally one the screen */
-  top: 50%;
-  /* centers the loading animation vertically one the screen */
-  background-image: url(../images/loading.gif);
-  /* path to your loading animation */
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: -100px 0 0 -100px;
-  /* is width and height divided by two */
-}
-
 #preloader {
   position: fixed;
   left: 0;
@@ -153,5 +88,5 @@ footer.page-footer {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url(../images/loading.gif) no-repeat center center;
+  background: #fff url(../images/ATM_Loading.gif) no-repeat center center;
 }
