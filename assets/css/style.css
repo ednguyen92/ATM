@@ -90,3 +90,7 @@ footer.page-footer {
   overflow: visible;
   background: #fff url(../images/ATM_Loading.gif) no-repeat center center;
 }
+
+.carousel {
+  height: 800px;
+}
