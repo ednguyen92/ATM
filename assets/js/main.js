@@ -27,7 +27,7 @@ jQuery(document).ready(function ($) {
 });
 
 $('.carousel.carousel-slider').carousel({
-  // fullWidth: true,
+  fullWidth: true,
   indicators: true,
 }, setTimeout(autoplay, 4500));
 
