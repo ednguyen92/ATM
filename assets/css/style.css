@@ -23,7 +23,7 @@ p {
   .carousel.carousel-slider {
     height: 800px;
   }
-
+  
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -98,5 +98,9 @@ footer.page-footer {
   height: 100%;
   overflow: visible;
   background: #fff url(../images/ATM_Loading.gif) no-repeat center center;
+}
+
+.open-times {
+  text-align: right;
 }
 
