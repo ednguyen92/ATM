@@ -4,7 +4,7 @@
     $('.sidenav').sidenav();
     $('.parallax').parallax();
     $('.scrollspy').scrollSpy({
-      throttle: 10
+      behavior: 'smooth'
     });
     $('.dropdown-trigger').dropdown({
       inDuration: 300,
