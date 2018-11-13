@@ -13,6 +13,23 @@
       // belowOrigin: true, // Displays dropdown below the button
       coverTrigger: false
     });
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: false
+   });
+      // move next carousel
+      $('.moveNextCarousel').click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $('.carousel').carousel('next');
+     });
+  
+     // move prev carousel
+     $('.movePrevCarousel').click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $('.carousel').carousel('prev');
+     });
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
@@ -26,12 +43,12 @@ jQuery(document).ready(function ($) {
   });  
 });
 
-$('.carousel.carousel-slider').carousel({
-  fullWidth: true,
-  indicators: true,
-}, setTimeout(autoplay, 4500));
+// $('.carousel.carousel-slider').carousel({
+//   fullWidth: true,
+//   indicators: true,
+// }, setTimeout(autoplay, 4500));
 
-function autoplay() {
-  $('.carousel').carousel('next');
-  setTimeout(autoplay, 4500);
-} 
+// function autoplay() {
+//   $('.carousel').carousel('next');
+//   setTimeout(autoplay, 4500);
+// } 
