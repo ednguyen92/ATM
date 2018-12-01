@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
     $txt = "You have received an email from ".$firstname.".\n\n".$message;
 
     mail($mailTo, $companyname, $txt, $headers);
-    header("Location: index.html?mailsend");
+    header("Location: index.html");
 
 }
 ?>
