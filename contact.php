@@ -10,9 +10,14 @@ if (isset($_POST['submit'])) {
 
     $mailTo = "ednguyen92@hotmail.com";
     $headers = "From: ".$mailFrom;
-    $txt = "You have received an email from ".$firstname.".\n\n".$message;
+    $quoterequest = $companyname." Requesting Quote.";
+    $txt = "You've recieved a quote request from: 
+    \n Name: ".$firstname." ".$lastname.
+    "\n\n Company Name: ".$companyname.
+    "\n\n Phone Number: ".$phonenumber.
+    "\n\n Message: ".$message;
 
-    mail($mailTo, $companyname, $txt, $headers);
+    mail($mailTo, $quoterequest, $txt, $headers);
     header("Location: index.html");
 
 }

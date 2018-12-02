@@ -176,3 +176,7 @@ footer.page-footer {
     .indicators{
   	visibility: hidden;
   }
+
+  .input-field label{
+    pointer-events: all !important;
+}
